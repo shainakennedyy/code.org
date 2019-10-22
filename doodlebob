@@ -1,0 +1,166 @@
+turnLeft(90);
+moveForward(60);
+turnLeft(90);
+moveForward(110);
+turnLeft(90);
+moveForward(90);
+turnLeft(90);
+moveForward(110);
+turnLeft(90);
+moveForward(30);
+turnLeft(180);
+moveForward(30);
+turnRight(90);
+moveForward(80);
+turnRight(90);
+moveForward(90);
+penUp();
+moveTo(169, 280);
+penDown();
+arcRight(360, 15);
+penUp();
+moveTo(121, 275);
+penDown();
+arcRight(360, 11);
+penUp();
+function leftEyelash() {
+  moveTo(122, 253);
+  penDown();
+  turnRight(90);
+  moveForward(5);
+  penUp();
+  moveTo(110, 257);
+  penDown();
+  moveForward(5);
+  penUp();
+  moveTo(128, 255);
+  penDown();
+  moveForward(5);
+  penUp();
+  moveTo(127, 350);
+  penDown();
+}
+leftEyelash();
+function leg() {
+  turnRight(180);
+  moveForward(35);
+  turnRight(90);
+  moveForward(15);
+}
+leg();
+penUp();
+moveTo(159, 350);
+penDown();
+turnRight(90);
+leg();
+function rightEyelash() {
+  penUp();
+  moveTo(169, 250);
+  turnRight(90);
+  penDown();
+  moveForward(5);
+  penUp();
+  moveTo(173, 250);
+  penDown();
+  moveForward(5);
+  penUp();
+  moveTo(180, 255);
+  penDown();
+  moveForward(6);
+  penUp();
+}
+rightEyelash();
+function EYE() {
+  moveTo(158, 260);
+  penDown();
+  penWidth(3);
+  arcRight(360, 7);
+  penUp();
+  moveTo(120, 266);
+  penDown();
+  arcRight(360, 4);
+  penUp();
+}
+EYE();
+function nose() {
+  moveTo(143, 280);
+  penDown();
+  penWidth(1);
+  arcRight(360, 4);
+}
+nose();
+function mouth() {
+  penUp();
+  moveTo(116, 299);
+  penDown();
+  turnRight(90);
+  moveForward(50);
+  penUp();
+  penDown();
+  arcRight(90, 0);
+  penUp();
+  moveTo(130, 284);
+  turnRight(90);
+  moveForward(10);
+  turnLeft(90);
+  moveForward(15);
+  turnLeft(90);
+  moveForward(5);
+}
+mouth();
+function tooth() {
+  penDown();
+  turnRight(90);
+  moveForward(12);
+  turnLeft(90);
+  moveForward(15);
+  turnLeft(90);
+  moveForward(12);
+  turnRight(90);
+  moveForward(9);
+}
+tooth();
+tooth();
+penUp();
+moveForward(17);
+penDown();
+penWidth(2);
+turnTo(60);
+moveForward(65);
+arcRight(360, 5);
+moveBackward(9);
+arcRight(360, 6);
+moveBackward(9);
+arcRight(360, 4);
+penUp();
+moveTo(94, 300);
+turnLeft(90);
+penUp();
+penDown();
+moveBackward(10);
+moveForward(60);
+arcLeft(360, 5);
+moveBackward(9);
+arcLeft(360, 4);
+moveBackward(9);
+arcLeft(360, 4);
+penUp();
+moveTo(144, 332);
+turnTo(0);
+moveForward(13);
+turnLeft(180);
+turnTo(200);
+penDown();
+moveForward(15);
+turnTo(120);
+moveForward(7);
+turnTo(40);
+moveForward(6);
+turnTo(-14);
+moveForward(10);
+penUp();
+for (var i = 0; i < 10; i++) {
+  moveTo(randomNumber(97, 190), randomNumber(248, 320));
+  penRGB(randomNumber(1, 20), randomNumber(1, 10), randomNumber(1, 10), 1);
+  dot(randomNumber(1, 1));
+}
