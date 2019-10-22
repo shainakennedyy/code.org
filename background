@@ -1,0 +1,50 @@
+function sky() {
+  penRGB(135, 206, 235, 1);
+  dot(10000);
+}
+sky();
+function sand() {
+  moveTo(174, 1300);
+  penRGB(194, 178, 128, 1);
+  dot(1000);
+  penUp();
+  for (var i = 0; i < 15000; i++) {
+    moveTo(randomNumber(0, 2000), randomNumber(310, 2000));
+    penRGB(randomNumber(190, 210), randomNumber(170, 190), randomNumber(120, 140), 1);
+    dot(randomNumber(1, 3));
+  }
+  penDown();
+}
+sand();
+//flowers
+for (var i = 0; i < 3; i++) {
+  penRGB(0, 0, 0, 0.01);
+  penWidth(0.0001);
+  penRGB(randomNumber(215, 3), randomNumber(185, 5), randomNumber(185, 10), 1);
+  moveTo(randomNumber(0, 210), randomNumber(0, 210));
+  penWidth(randomNumber(1, 10));
+  moveForward(25);
+  arcRight(230, 20);
+  moveForward(25);
+  arcLeft(150, 17);
+  moveForward(25);
+  arcRight(230, 20);
+  moveForward(50);
+  arcLeft(150, 15);
+  moveForward(25);
+  arcRight(230, 25);
+  moveForward(30);
+  arcLeft(150, 15);
+  moveForward(25);
+  arcRight(230, 20);
+  moveForward(50);
+  arcLeft(190, 10);
+  moveForward(25);
+  arcRight(225, 25);
+  moveForward(55);
+  turnRight(50);
+  penWidth(0.1);
+  moveForward(15);
+  penWidth(3);
+  arcRight(360, 6);
+}
